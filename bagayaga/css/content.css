@@ -1,0 +1,136 @@
+.content{
+    padding-top: 200px;
+}
+.content__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.content__titel{
+    font-size: 64px;
+    font-weight: 700;
+}
+.content-text{
+    padding-top: 35px;
+    padding-bottom: 25px;
+    width: 533px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+.content-span{
+    position: relative;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.content-span::after{
+    content: '';
+    background-image: url('../images/arrow-right.svg');
+    background-repeat: no-repeat;
+    margin-top: 8px;
+    margin-left: 16px;
+    position: absolute;
+    width: 40px;
+    height: 16px;
+}
+
+.content__grid{
+    justify-items: stretch;
+    align-items: stretch;
+    margin-top: 140px;
+    display: grid;
+    gap: 20px;
+    height: auto;
+    grid-template-columns: 255px 255px;
+    margin-right: 20px;
+}
+.content-item{
+    border-radius: 3px;
+}
+.n1{
+    background-color: #2378FC;
+}
+.n2{
+    background-color: #30BCC9;
+}
+.n3{
+    background-color: #FFC41E;
+}
+.n4{
+    background-color: #F6404F;
+}
+.content__text{
+    font-size: 21px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+}
+
+.grid-span{
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 40px;
+    font-weight: 400;
+
+}
+.content-span{
+    margin-bottom: 30px;
+}
+
+
+
+@media(max-width: 1200px){
+    .content__title{
+        font-size: 36px;
+    }
+    .content__inner{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .content__grid{
+        padding: 20px 0;
+        grid-template-columns: 255px;
+    }
+    .content__grid{
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 800px){
+    .content-text{
+        padding-top: 0px;
+    }
+    .content__titel{
+        font-size: 50px;
+    }
+}
+@media(max-width: 600px){
+    .content-text{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding: 10px;
+        width: 330px;
+    }
+    .content__titel{
+        font-size: 42px;
+    }
+}
+
+@media(max-width: 400px){
+    .content__grid{
+        margin-right: 0;
+    }
+    .content__titel{
+        margin-left: 10px;
+        font-size: 32px;
+    }
+    .content-text{
+        width: 280px;
+    }
+    .span-left{
+        margin-left: 10px;
+    }
+}

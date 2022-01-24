@@ -1,0 +1,147 @@
+.footer{
+    padding-top: 50px;
+    background-color: #30BCC9;
+}
+.footer__inner{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__grid{
+    row-gap: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+.footer__social{
+    width: 255px;
+}
+.footer__list-item{
+    margin-bottom: 10px;
+}
+.footer__item-link{
+    color: #E0E0E0;
+}
+.footer__item-link:last-child{
+    margin-bottom: 0;
+}
+.footer__social-list{
+    display: flex;
+}
+.footer__social-item{
+    padding-top: 30px;
+    margin-right: 35px;
+}
+
+.footer__social-subtitle{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.footer__social-text{
+    margin-bottom: 25px;
+}
+.footer__title{
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.footer__img-1{
+    margin-bottom: 15px;
+}
+
+.social-input{
+    padding: 8px 0px;
+    padding-left: 20px;
+    padding-right: 90px;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.footer__social-form{
+    position: relative;
+    display: flex;
+}
+
+.item-bottom{
+    margin-top: -20px;
+}
+
+.footer__item-link{
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ;
+}
+
+.footer__item-link:hover{
+    border-bottom: 1px solid #fff;
+    color: #FFC41E;
+}
+
+.social-button{
+    position: relative;
+    cursor: pointer;
+    padding-left: 35px;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.social-button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #F6404F;
+    background-image: url(../images/message.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+@media(max-width: 1190px){
+    .footer__social{
+        padding-right: 15px;
+    }
+    .social-input{
+        padding-right: 0;
+    }
+}
+
+@media(max-width: 1190px){
+    .footer__grid{
+        grid-template-columns: 200px 200px;
+    }
+    .footer__social{
+        width: 380px;
+    }
+    .footer__grid-item{
+        padding-left: 20px;
+    }
+}
+
+@media(max-width: 798px){
+    .footer__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 430px){
+    .footer__grid{
+        grid-template-columns: 200px;
+    }
+    .footer__social{
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+}
