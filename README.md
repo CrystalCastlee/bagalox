@@ -1,2 +1,0 @@
-# bagalox
-fuckingslave
