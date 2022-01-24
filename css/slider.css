@@ -1,0 +1,52 @@
+.slider{
+    padding-top: 150px;
+    background-color: #2378FC;
+}
+
+.name{
+    display: inline-block;
+    font-family: "Rubik", sans-serif;
+    margin-top: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    margin-left: 45%;
+    color: #fefefe;
+}
+.text{
+    margin: 0 auto;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #fefefe;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 19px;
+    padding: 0 10px;
+    max-width: 600px;
+}
+.slick-dots li.slick-active button:before{
+    font-size: 10px;
+    color: red;
+}
+#slick-slide-control00{
+    color: orange;
+}
+
+
+@media(max-width: 900px){
+    .name{
+        margin-left: 40%;
+    }
+}
+
+@media(max-width: 600px){
+    .name{
+        margin-left: 35%;
+    }
+}
+
+@media(max-width: 360px){
+    .name{
+        margin-left: 28%;
+    }
+}
